@@ -162,7 +162,7 @@ if __name__ == '__main__':
 4. Bring everything together and establish asking 10 questions
 
 #### Shortcomings
-* With using threading using the line `time.sleep(8)` won't work as intended. Multithreading relys on I/O bound stoppages to process other code. And in this case it would take 8 seconds for the timer to finish meaning that each question would take that long regardless of how fast the answer was inputted.
+* Using the line `time.sleep(8)` won't work as intended because it wouldn't let me take advantage of multithreading. This concept relys on I/O bound stoppages to process other code. And in this case it would take 8 seconds for the timer to finish meaning that each question would take that long regardless of how fast the answer was inputted.
 * Also I didn't know how to use threading which ended up with me creating an entire side project just to explore multithreading and queues. So I was trying to use threading but i had no clue.
 * I was returning multiple variables which isnt horrible, just messy from the question function. Those could've been handled on the global score so anyone can interact with the information instead of having to 'handshake' it back and forth.
 
