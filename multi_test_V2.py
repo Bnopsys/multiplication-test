@@ -1,4 +1,4 @@
-import queue, threading, time, random
+import threading, time, random
 import concurrent.futures
 
 # create two random numbers inside of the main so they can be accessed by everyone
